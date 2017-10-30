@@ -1,0 +1,13 @@
+Preconditions:
+
+- You must hava Java 8 (or newer) Runtime environment installed
+
+Running the program:
+
+To run the program first create a jar file by running the following command in the 'ticketprizecalculator' folder:
+./gradlew clean jar
+
+Once the task completes you can run the program by typing the following command in the same folder:
+java -jar build/libs/ticketprizecalculator-1.0-SNAPSHOT.jar "JavaMillions" "1,2,3,4,5,6" "1,2,3,4,5,6"
+or
+java -jar build/libs/ticketprizecalculator-1.0-SNAPSHOT.jar "SpringLotto" "1,2,3,4,5,6" "1,2,3,9,8,7"

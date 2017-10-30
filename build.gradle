@@ -1,0 +1,31 @@
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+mainClassName = 'com.github.cristibalint.TicketPrizeCalculator'
+run {
+    args = ["SpringLotto", "1,2,3,4,5,6", "1,5,7,33,32,6"]
+}
+
+group 'cristibalint.github.com'
+version '1.0-SNAPSHOT'
+
+jar {
+    manifest {
+        attributes(
+                'Title': 'Balint Cristian - Calculating Lottery Winners v1.0.0',
+                'Version': '$version',
+                'Main-Class': 'com.github.cristibalint.TicketPrizeCalculator'
+        )
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
